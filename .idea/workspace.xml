@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ProjekKP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/BACKGROUND.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Modes/CARD-ACCEPT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Modes/CARD-ACTIVE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Modes/CARD-REJECT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Modes/CARD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +27,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -52,6 +43,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\firha\PycharmProjects\ProjekKP\Images" />
       <recent name="C:\Users\firha\PycharmProjects\ProjekKP\Resources" />
       <recent name="C:\Users\firha\PycharmProjects\ProjekKP\Resources\Modes" />
     </key>
@@ -97,11 +89,29 @@
       <option name="presentableId" value="Default" />
       <updated>1702876504149</updated>
       <workItem from="1702876511712" duration="1053000" />
-      <workItem from="1702944702118" duration="2096000" />
+      <workItem from="1702944702118" duration="3418000" />
+      <workItem from="1703039765427" duration="820000" />
+      <workItem from="1703040606153" duration="94000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1702952050882</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702952050882</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProjekKP$main.coverage" NAME="main Coverage Results" MODIFIED="1703040684879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
