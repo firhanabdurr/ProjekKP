@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="encode generator">
+    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="encode generator complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encodeGene.py" beforeDir="false" afterPath="$PROJECT_DIR$/encodeGene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <workItem from="1704711742669" duration="5260000" />
       <workItem from="1704883272843" duration="2573000" />
       <workItem from="1705451388733" duration="3512000" />
-      <workItem from="1705497894753" duration="740000" />
+      <workItem from="1705497894753" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -145,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704891175749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="encode generator complete">
+      <option name="closed" value="true" />
+      <created>1705500111887</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705500111887</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,10 +165,11 @@
     <MESSAGE value="change background" />
     <MESSAGE value="add encode generator" />
     <MESSAGE value="encode generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="encode generator" />
+    <MESSAGE value="encode generator complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="encode generator complete" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProjekKP$main.coverage" NAME="main Coverage Results" MODIFIED="1705454410722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ProjekKP$encodeGene.coverage" NAME="encodeGene Coverage Results" MODIFIED="1705454802045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjekKP$encodeGene.coverage" NAME="encodeGene Coverage Results" MODIFIED="1705500184153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

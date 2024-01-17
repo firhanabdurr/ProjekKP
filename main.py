@@ -1,4 +1,5 @@
 import os
+import pickle
 
 import cv2
 
@@ -17,6 +18,16 @@ for path in modePathList:
 
 #print((len(imgModeList)))
 
+# Load encoding file
+print('Loading encode file ...')
+file = open('EncodeFile.p', 'rb')
+encodeListKnownWithIds = pickle.load(file)
+file.close()
+encodeListKnown, studentIds = encodeListKnownWithIds
+print(studentIds)
+print('Encode file complete ...')
+while True:
+    success, img = cap.read()
 
 
 while True:
