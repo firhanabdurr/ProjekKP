@@ -19,8 +19,8 @@ for path in pathList:
     #blob.upload_from_filename(fileName)
 
 
-    # print(path)
-    # print(os.path.splitext(path)[0])
+print(path)
+print(os.path.splitext(path)[0])
 print(studentIds)
 print(len(imgList))
 
@@ -30,15 +30,17 @@ def findEncodings(imagesList):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         encode = face_recognition.face_encodings(img)[0]
         encodeList.append(encode)
-
     return encodeList
+
+encodListKnown = findEncodings(imgList)
 
 
 print("Encoding Started ...")
 encodeListKnown = findEncodings(imgList)
 encodeListKnownWithIds = [encodeListKnown, studentIds]
-print("Encoding Complete")
-
+# print(encodeListKnown)
+print("Encoding Ended ...")
+#
 file = open("EncodeFile.p", 'wb')
 pickle.dump(encodeListKnownWithIds, file)
 file.close()
