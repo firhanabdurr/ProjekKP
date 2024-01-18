@@ -1,9 +1,14 @@
 import os
 import pickle
-import cvzone
+import numpy as np
 import cv2
 import face_recognition
-import numpy as np
+import cvzone
+# import firebase_admin
+# from firebase_admin import credentials
+# from firebase_admin import db
+# from firebase_admin import storage
+# from datetime import datetime
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
@@ -38,7 +43,6 @@ while True:
 
     imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
     imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
-    # print("Image dimensions:", img.shape)
 
     faceCurframe = face_recognition.face_locations(imgS)
     encodeCurFrame = face_recognition.face_encodings(imgS, faceCurframe)
@@ -48,21 +52,19 @@ while True:
 
     for encodeFace, faceLoc in zip(encodeCurFrame, faceCurframe):
         matches = face_recognition.compare_faces(encodeListKnown, encodeFace)
-        faceDis = face_recognition.compare_faces(encodeListKnown, encodeFace)
-        # print("matches", matches)
-        # print("faceDis", faceDis)
+        faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
+        print("matches",matches)
 
         matchIndex = np.argmin(faceDis)
-        # print("Match Index", matchIndex)
 
         if matches[matchIndex]:
-            # print("Known face detected")
-            # print(studentIds[matchIndex])
+            # coordinates bounding box doesn't appear
             y1, x2, y2, x1 = faceLoc
-            y1, x2, y2, x1 = y1*4, x2*4, y2*4, x1*4
-            bbox = 55 + x1, 162 + y1, x2-x1, y2 - y1
-            imgBackground = cvzone.cornerRect(imgBackground,bbox,rt=0)
+            y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
+            # Print coordinates
+            print(f"Bounding Box Coordinates: y1={y1}, x2={x2}, y2={y2}, x1={x1}")
+            bbox = 55 + x1, 162 + y1, x2 - x1, y2 - y1
+            imgBackground = cvzone.cornerRect(imgBackground, bbox, rt=0, colorR=(0, 255, 0), t=2)  # Draw bounding box
 
-    cv2.imshow("Face Attendance", img)
     cv2.imshow("Face Attendance", imgBackground)
     cv2.waitKey(1)
