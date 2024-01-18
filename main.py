@@ -2,6 +2,7 @@ import os
 import pickle
 
 import cv2
+import face_recognition
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
@@ -26,15 +27,31 @@ file.close()
 encodeListKnown, studentIds = encodeListKnownWithIds
 print(studentIds)
 print('Encode file complete ...')
-while True:
-    success, img = cap.read()
-
 
 while True:
     success, img = cap.read()
 
-    imgBackground[162:162+480, 55:55+640] = img
-    imgBackground[44:44+633, 808:808+414] = imgModeList[0]
+    if not success:
+        print("Error: Unable to read a frame from the webcam.")
+        break  # Break the loop if reading fails
+
+    imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
+    imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
+    # print("Image dimensions:", img.shape)
+
+    faceCurframe = face_recognition.face_locations(imgS)
+    encodeCurFrame = face_recognition.face_encodings(imgS, faceCurframe)
+
+    imgBackground[162:162 + 480, 55:55 + 640] = img
+    imgBackground[44:44 + 633, 808:808 + 414] = imgModeList[0]
+
+    for encodeFace, faceLoc in zip(encodeCurFrame, faceCurframe):
+        matches = face_recognition.compare_faces(encodeListKnown, encodeFace)
+        faceDis = face_recognition.compare_faces(encodeListKnown, encodeFace)
+        print("matches", matches)
+        print("faceDis", faceDis)
+
+
 
     cv2.imshow("Face Attendance", img)
     cv2.imshow("Face Attendance", imgBackground)
