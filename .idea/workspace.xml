@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="face recognition complete">
-      <change afterPath="$PROJECT_DIR$/AddDatatoDB.py" afterDir="false" />
+    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="add data to db">
+      <change afterPath="$PROJECT_DIR$/proto.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/serviceAccountKey.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddDatatoDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/AddDatatoDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Modes/card-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Modes/card-marked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Modes/card-rejected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Modes/card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/encodeGene.py" beforeDir="false" afterPath="$PROJECT_DIR$/encodeGene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../ProjekKP\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,7 +123,7 @@
       <workItem from="1705652739383" duration="5148000" />
       <workItem from="1705711092267" duration="209000" />
       <workItem from="1705718840102" duration="655000" />
-      <workItem from="1705723367661" duration="414000" />
+      <workItem from="1705723367661" duration="13218000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -195,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705617168984</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add data to db">
+      <option name="closed" value="true" />
+      <created>1705723988047</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705723988047</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,11 +228,12 @@
     <MESSAGE value="encode generator complete" />
     <MESSAGE value="implementasi face recognition" />
     <MESSAGE value="face recognition complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="face recognition complete" />
+    <MESSAGE value="add data to db" />
+    <option name="LAST_COMMIT_MESSAGE" value="add data to db" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProjekKP$main.coverage" NAME="main Coverage Results" MODIFIED="1705723676695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ProjekKP$AddDatatoDB.coverage" NAME="AddDatatoDB Coverage Results" MODIFIED="1705723688356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ProjekKP$encodeGene.coverage" NAME="encodeGene Coverage Results" MODIFIED="1705552199467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjekKP$main.coverage" NAME="main Coverage Results" MODIFIED="1705754830422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjekKP$AddDatatoDB.coverage" NAME="AddDatatoDB Coverage Results" MODIFIED="1705723786951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjekKP$encodeGene.coverage" NAME="encodeGene Coverage Results" MODIFIED="1705724568601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

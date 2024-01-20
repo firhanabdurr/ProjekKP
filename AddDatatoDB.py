@@ -13,7 +13,7 @@ data = {
     "963852":
         {
             "name": "Elon Musk",
-            "Class": "Physics",
+            "class": "Physics",
             "starting_year": 2020,
             "total_attendance": 7,
             "standing": "G",
