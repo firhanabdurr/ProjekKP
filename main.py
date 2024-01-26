@@ -12,8 +12,8 @@ from datetime import datetime
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL': 'https://faceattendancerealtime-a0586-default-rtdb.firebaseio.com/',
-    'storageBucket': 'faceattendancerealtime-a0586.appspot.com'
+    'databaseURL': '#',
+    'storageBucket': '#'
 })
 
 bucket = storage.bucket()
@@ -79,7 +79,7 @@ while True:
                 id = studentIds[matchIndex]
                 if counter == 0:
                     cvzone.putTextRect(imgBackground, "Loading", (275, 400))
-                    cv2.imshow("Face Attendance", imgBackground)
+                    cv2.imshow("Absenin", imgBackground)
                     cv2.waitKey(1)
                     counter = 1
                     modeType = 1
@@ -119,16 +119,10 @@ while True:
                 if counter <= 10:
                     cv2.putText(imgBackground, str(studentInfo['total_attendance']), (861, 125),
                                 cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 1)
-                    cv2.putText(imgBackground, str(studentInfo['Class']), (1006, 550),
+                    cv2.putText(imgBackground, str(studentInfo['class']), (1006, 550),
                                 cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255), 1)
                     cv2.putText(imgBackground, str(id), (1006, 493),
                                 cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255), 1)
-                    cv2.putText(imgBackground, str(studentInfo['standing']), (910, 625),
-                                cv2.FONT_HERSHEY_COMPLEX, 0.6, (100, 100, 100), 1)
-                    cv2.putText(imgBackground, str(studentInfo['year']), (1025, 625),
-                                cv2.FONT_HERSHEY_COMPLEX, 0.6, (100, 100, 100), 1)
-                    cv2.putText(imgBackground, str(studentInfo['starting_year']), (1125, 625),
-                                cv2.FONT_HERSHEY_COMPLEX, 0.6, (100, 100, 100), 1)
 
                     (w, h), _ = cv2.getTextSize(studentInfo['name'], cv2.FONT_HERSHEY_COMPLEX, 1, 1)
                     offset = (414 - w) // 2
@@ -149,7 +143,7 @@ while True:
         modeType = 0
         counter = 0
     # cv2.imshow("Webcam", img)
-    cv2.imshow("Face Attendance", imgBackground)
+    cv2.imshow("Absenin", imgBackground)
     cv2.waitKey(1)
 
 
