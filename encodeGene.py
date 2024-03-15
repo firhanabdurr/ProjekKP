@@ -1,7 +1,7 @@
 import cv2
 import os
 import face_recognition
-import  pickle
+import pickle
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
@@ -9,8 +9,8 @@ from  firebase_admin import storage
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL': '#',
-    'storageBucket': '#'
+    'databaseURL': 'https://faceattendancerealtime-a0586-default-rtdb.firebaseio.com/',
+    'storageBucket': 'faceattendancerealtime-a0586.appspot.com'
 })
 
 #import face images
@@ -41,20 +41,20 @@ def findEncodings(imagesList):
         encodeList.append(encode)
 
     return encodeList
-# def findEncodings(imagesList):
-#     encodeList = []
-#     for img in imagesList:
-#         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-#         face_encodings = face_recognition.face_encodings(img)
-#
-#         # Check if any face was found in the image
-#         if len(face_encodings) > 0:
-#             encode = face_encodings[0]
-#             encodeList.append(encode)
-#         else:
-#             print("No face found in one or more images.")
-#
-#     return encodeList
+def findEncodings(imagesList):
+    encodeList = []
+    for img in imagesList:
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        face_encodings = face_recognition.face_encodings(img)
+
+        # Check if any face was found in the image
+        if len(face_encodings) > 0:
+            encode = face_encodings[0]
+            encodeList.append(encode)
+        else:
+            print("No face found in one or more images.")
+
+    return encodeList
 
 encodListKnown = findEncodings(imgList)
 

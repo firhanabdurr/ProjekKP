@@ -12,8 +12,8 @@ from datetime import datetime
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL': '#',
-    'storageBucket': '#'
+    'databaseURL': 'https://faceattendancerealtime-a0586-default-rtdb.firebaseio.com/',
+    'storageBucket': 'faceattendancerealtime-a0586.appspot.com'
 })
 
 bucket = storage.bucket()
@@ -120,9 +120,9 @@ while True:
                     cv2.putText(imgBackground, str(studentInfo['total_attendance']), (861, 125),
                                 cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 1)
                     cv2.putText(imgBackground, str(studentInfo['class']), (1006, 550),
-                                cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255), 1)
+                                cv2.FONT_HERSHEY_COMPLEX, 0.5, (50, 50, 50), 1)
                     cv2.putText(imgBackground, str(id), (1006, 493),
-                                cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255), 1)
+                                cv2.FONT_HERSHEY_COMPLEX, 0.5, (50, 50, 50), 1)
 
                     (w, h), _ = cv2.getTextSize(studentInfo['name'], cv2.FONT_HERSHEY_COMPLEX, 1, 1)
                     offset = (414 - w) // 2

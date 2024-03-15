@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="finishing">
+    <list default="true" id="8ede3b55-b315-4f82-9c5f-097654d0dc05" name="Changes" comment="rev">
       <change afterPath="$PROJECT_DIR$/serviceAccountKey.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AddDatatoDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/AddDatatoDB.py" afterDir="false" />
@@ -28,6 +28,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;firhanabdurr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="464fa153-5563-4592-afd3-33d436c25172" />
+        <option name="url" value="https://github.com/firhanabdurr/ProjekKP.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -119,7 +136,20 @@
       <workItem from="1705711092267" duration="209000" />
       <workItem from="1705718840102" duration="655000" />
       <workItem from="1705723367661" duration="14516000" />
-      <workItem from="1706241780687" duration="7024000" />
+      <workItem from="1706241780687" duration="9367000" />
+      <workItem from="1706352475806" duration="3195000" />
+      <workItem from="1706490432113" duration="4256000" />
+      <workItem from="1706526426351" duration="7028000" />
+      <workItem from="1706610924262" duration="2564000" />
+      <workItem from="1706661601703" duration="2218000" />
+      <workItem from="1706779743773" duration="32000" />
+      <workItem from="1707466846609" duration="621000" />
+      <workItem from="1708345010823" duration="394000" />
+      <workItem from="1708736932292" duration="1543000" />
+      <workItem from="1708748531847" duration="1421000" />
+      <workItem from="1708787968968" duration="165000" />
+      <workItem from="1708868706512" duration="753000" />
+      <workItem from="1708908269931" duration="1403000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -217,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705754945909</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="rev">
+      <option name="closed" value="true" />
+      <created>1706276514016</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706276514016</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,11 +272,12 @@
     <MESSAGE value="face recognition complete" />
     <MESSAGE value="add data to db" />
     <MESSAGE value="finishing" />
-    <option name="LAST_COMMIT_MESSAGE" value="finishing" />
+    <MESSAGE value="rev" />
+    <option name="LAST_COMMIT_MESSAGE" value="rev" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ProjekKP$main.coverage" NAME="main Coverage Results" MODIFIED="1706263982638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ProjekKP$AddDatatoDB.coverage" NAME="AddDatatoDB Coverage Results" MODIFIED="1705723786951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ProjekKP$encodeGene.coverage" NAME="encodeGene Coverage Results" MODIFIED="1705724568601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjekKP$main.coverage" NAME="main Coverage Results" MODIFIED="1706629404138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjekKP$AddDatatoDB.coverage" NAME="AddDatatoDB Coverage Results" MODIFIED="1706629137514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjekKP$encodeGene.coverage" NAME="encodeGene Coverage Results" MODIFIED="1706628507526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
